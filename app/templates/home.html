@@ -1,0 +1,13 @@
+{% extends 'base_template.html' %}
+
+{% block title %}Welcome to CSC121 Lab 1{% endblock %}
+
+{% block body_data %}
+<section class="hero">
+    <div class="hero-content">
+        <h1>Welcome to CSC121 Lab 1 Group</h1>
+        <p>Join us in exploring the exciting world of computer science!</p>
+        <a href="{% url 'about' %}" class="btn">Learn More</a>
+    </div>
+</section>
+{% endblock body_data %}

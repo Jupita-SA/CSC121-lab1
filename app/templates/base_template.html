@@ -1,0 +1,18 @@
+<!-- @format -->
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{% block title %}My Website{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+  </head>
+  <body>
+    {% include 'header.html' %}
+    
+    {% block body_data %}My Website{% endblock body_data %} 
+    
+    {% include 'footer.html' %}
+  </body>
+</html>
